@@ -15,11 +15,11 @@ services:
     build: .
     environment:
       DB_HOST: db
-      DB_PORT: 5432
+      DB_PORT: ${DB_PORT:-5432}
       DB_USER: ${DB_USER:-postgres}
       DB_PASSWORD: ${DB_PASSWORD:-postgres}
       DB_NAME: ${DB_NAME:-task_manager}
-      PORT: 3000
+      PORT: ${PORT:-3000}
     depends_on:
       - db
     ports:

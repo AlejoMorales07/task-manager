@@ -1,5 +1,6 @@
 import { AppController } from '@/app.controller'
 import { AppService } from '@/app.service'
+import { CommonModule } from '@/common/common.module'
 import { TypeOrmConfig } from '@/persistence/infrastructure/typeorm.config'
 import { TasksModule } from '@/task/infrastructure/http-api/tasks.module'
 import { UsersModule } from '@/user/infrastructure/http-api/users.module'
@@ -15,7 +16,8 @@ import { TypeOrmModule } from '@nestjs/typeorm'
       useClass: TypeOrmConfig
     }),
     UsersModule,
-    TasksModule
+    TasksModule,
+    CommonModule
   ],
   controllers: [AppController],
   providers: [AppService]

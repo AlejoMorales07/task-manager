@@ -1,0 +1,8 @@
+{
+  "description": "Sample signature with white background for testing transparent background removal",
+  "dimensions": "300x150",
+  "format": "PNG",
+  "background": "white",
+  "signature_color": "black",
+  "created": "2025-09-16T21:40:58.252Z"
+}
